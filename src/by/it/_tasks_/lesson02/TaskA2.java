@@ -8,18 +8,6 @@ package by.it._tasks_.lesson02;
 Для автоматической проверки откройте и запустите класс Testing
 */
 
-public class TaskA2 {
-    private static final String TEXT = "Я начинаю изучать Java";
-    public static void main(String[] args) {
-        System.out.println(TEXT);
+class TaskA2 {
 
-        String s = "Я начинаю изучать Java";
-
-        printTextMoreTimes(s, 5);
-    }
-    private static void printTextMoreTimes (String phrase, int count) {
-        for (int i = 1; i < count; i++) {
-            System.out.println(phrase);
-        }
-    }
 }

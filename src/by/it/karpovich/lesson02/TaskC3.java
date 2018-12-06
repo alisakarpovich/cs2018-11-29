@@ -1,4 +1,6 @@
-package by.it._tasks_.lesson02;
+package by.it.karpovich.lesson02;
+
+import java.util.Scanner;
 
 /*
 Ускорение свободного падения на Земле и Марсе таково:
@@ -31,4 +33,23 @@ package by.it._tasks_.lesson02;
 */
 class TaskC3 {
 
+    static double getWeight(int weight) {
+        double res = weight/9.81*3.86;
+        int res100=(int) (res*100);
+        double delta=res*100-res100;
+        if (delta<0.5)
+        return res100/100.0;
+
+        else
+            return (res100 + 1) / 100.0;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int we = sc.nextInt();
+        double wm = getWeight(we);
+
+        System.out.println(wm);
+
+    }
 }

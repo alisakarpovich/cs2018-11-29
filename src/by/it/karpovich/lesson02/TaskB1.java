@@ -1,4 +1,4 @@
-package by.it._tasks_.lesson02;
+package by.it.karpovich.lesson02;
 
 /*
 Выводим квадрат числа
@@ -19,5 +19,16 @@ int i=sc.nextInt();
 
  */
 
+
+import java.util.Scanner;
+
 class TaskB1 {
+    public static void main(String[] args) {
+        System.out.println("Please enter your number");
+
+    Scanner sc = new Scanner(System.in);
+    int i=sc.nextInt();
+
+    System.out.println(i*i);
+}
 }
